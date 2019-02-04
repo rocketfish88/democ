@@ -1,0 +1,34 @@
+Data looks like this: 
+
+            X          Y         District  Capital    Province
+28  62.924194  34.884878        Ab Kamari      NaN     Badghis
+29  63.420853  35.508010     Bala Murghab      NaN     Badghis
+30  63.766878  35.699421         Ghormach      NaN     Badghis
+31  64.386047  35.050580           Jawand      NaN     Badghis
+32  63.227957  35.146545            Muqur      NaN     Badghis
+33  63.464098  34.884522            Qadis      NaN     Badghis
+34  63.110065  34.845898       Qala-e-Naw      1.0     Badghis
+
+The dataset has five values: X, Y, District, Capital, Province.
+
+There are 34 provinces and 400 districts. Provinces contain many districts.
+
+I want to do a for loop which calculates the distance between the X, Y 
+for the province's capital, and the province's districts.
+
+I dont need a script to do the distance calculation because I have a 
+function in python to calculate the distance which looks like:
+# distance = mpu.haversine_distance((y1, x1), (y2, x2))
+
+Basically, the code needs loop over every province and its releated districts.
+It would automate something that looks like this:
+
+## Badghis Province
+
+distance = mpu.haversine_distance((34.845898 , 63.110065), (34.884878, 62.924194)) # Distance between Qala-e-Naw, the capital, and Ab Kamari, the first district in Badghis
+distance = mpu.haversine_distance((34.845898 , 63.110065), (35.508010, 63.420853)) # Distance between Qala-e-Naw, the capital, and Bala Murghab, the second district in Badghis
+distance = mpu.haversine_distance((34.845898 , 63.110065), (35.699421, 63.766878)) # Distance between Qala-e-Naw, the capital, and Ghormach, the third district in Badghis
+
+... repeat for the next 4 districts
+
+Then it should start the next province, find the capital's X and Y, insert the X and Y into the first tuple and then insert every district into the second tuple.
