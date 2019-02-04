@@ -25,9 +25,14 @@ It would automate something that looks like this:
 
 ## Badghis Province
 
-distance = mpu.haversine_distance((34.845898 , 63.110065), (34.884878, 62.924194)) # Distance between Qala-e-Naw, the capital, and Ab Kamari, the first district in Badghis
-distance = mpu.haversine_distance((34.845898 , 63.110065), (35.508010, 63.420853)) # Distance between Qala-e-Naw, the capital, and Bala Murghab, the second district in Badghis
-distance = mpu.haversine_distance((34.845898 , 63.110065), (35.699421, 63.766878)) # Distance between Qala-e-Naw, the capital, and Ghormach, the third district in Badghis
+distance = mpu.haversine_distance((34.845898 , 63.110065), (34.884878, 62.924194)) 
+# Distance between Qala-e-Naw, the capital, and Ab Kamari, the first district in Badghis
+
+distance = mpu.haversine_distance((34.845898 , 63.110065), (35.508010, 63.420853)) 
+# Distance between Qala-e-Naw, the capital, and Bala Murghab, the second district in Badghis
+
+distance = mpu.haversine_distance((34.845898 , 63.110065), (35.699421, 63.766878)) 
+# Distance between Qala-e-Naw, the capital, and Ghormach, the third district in Badghis
 
 ... repeat for the next 4 districts
 
